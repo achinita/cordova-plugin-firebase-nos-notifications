@@ -40,6 +40,13 @@
     Method original = class_getInstanceMethod(self, @selector(application:didFinishLaunchingWithOptions:));
     Method swizzled = class_getInstanceMethod(self, @selector(application:swizzledDidFinishLaunchingWithOptions:));
     method_exchangeImplementations(original, swizzled);
+  
+    static dispatch_once_t onceToken;
+
+    dispatch_once(&onceToken, ^{
+        [self swizzleMethod:@selector(application:openURL:options:)];
+        [self swizzleMethod:@selector(application:continueUserActivity:restorationHandler:)];
+    });
 }
 
 - (void)setApplicationInBackground:(NSNumber *)applicationInBackground {
