@@ -37,6 +37,7 @@
 @property(nonatomic, copy) NSString *tokenRefreshCallbackId;
 @property(nonatomic, retain) NSMutableArray *notificationStack;
 @property(nonatomic, readwrite) NSMutableDictionary *traces;
+@property (nonatomic, copy) NSString* dynamicLinkCallbackId;
 @property (nonatomic, retain) NSDictionary* lastDynamicLinkData;
 
 @end
