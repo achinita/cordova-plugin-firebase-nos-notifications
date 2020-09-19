@@ -36,8 +36,20 @@ static FirebasePlugin *firebasePlugin;
     NSLog(@"FirebasePlugin - Starting Firebase plugin");
     firebasePlugin = self;
 }
-
 //
+// Dynamic Links
+//
+- (void)onDynamicLink:(CDVInvokedUrlCommand *)command {
+    self.dynamicLinkCallbackId = command.callbackId;
+
+    if (self.lastDynamicLinkData) {
+        CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:self.lastDynamicLinkData];
+        [pluginResult setKeepCallbackAsBool:YES];
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:self.dynamicLinkCallbackId];
+
+        self.lastDynamicLinkData = nil;
+    }
+}
 // Notifications
 //
 - (void)getId:(CDVInvokedUrlCommand *)command {
