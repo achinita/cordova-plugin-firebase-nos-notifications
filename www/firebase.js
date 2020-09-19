@@ -176,13 +176,13 @@ exports.setAnalyticsCollectionEnabled = function (enabled, success, error) {
 // //
 // // Dynamic Links
 // //
-// exports.onDynamicLink = function (success, error) {
-//   exec(success, error, PLUGIN_NAME, "onDynamicLink", []);
-// };
+exports.onDynamicLink = function (success, error) {
+  exec(success, error, PLUGIN_NAME, "onDynamicLink", []);
+};
 
-// exports.dynamicLinkCallback = function (dynamicLink) {
-//   var ev = document.createEvent('HTMLEvents');
-//   ev.dynamicLink = dynamicLink;
-//   ev.initEvent('dynamic-link', true, true, arguments);
-//   document.dispatchEvent(ev);
-// };
+exports.dynamicLinkCallback = function (dynamicLink) {
+  var ev = document.createEvent('HTMLEvents');
+  ev.dynamicLink = dynamicLink;
+  ev.initEvent('dynamic-link', true, true, arguments);
+  document.dispatchEvent(ev);
+};
