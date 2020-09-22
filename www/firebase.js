@@ -179,11 +179,11 @@ exports.setAnalyticsCollectionEnabled = function (enabled, success, error) {
 // //
 // // Dynamic Links
 // //
-export.onDynamicLink = function (success, error) {
+exports.onDynamicLink = function (success, error) {
   exec(success, error, PLUGIN_NAME, "onDynamicLink", []);
 };
 
-export.dynamicLinkCallback = function (dynamicLink) {
+exports.dynamicLinkCallback = function (dynamicLink) {
   var ev = document.createEvent('HTMLEvents');
   ev.dynamicLink = dynamicLink;
   ev.initEvent('dynamic-link', true, true, arguments);
