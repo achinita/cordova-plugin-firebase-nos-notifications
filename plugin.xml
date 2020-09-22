@@ -108,6 +108,7 @@
 
 <!--     <framework src="Fabric" type="podspec" spec="~> 1.9" />
     <framework src="Crashlytics" type="podspec" spec="~> 3.12" /> -->
+    <framework src="FirebaseCore" type="podspec" spec="~> 6.2" />
     <framework src="FirebaseAnalytics" type="podspec" spec="~> 4.2" />
     <framework src="FirebaseMessaging" type="podspec" spec="~> 2.2" />
     <framework src="FirebaseDynamicLinks" type="podspec" spec="~> 4.0.5" />
