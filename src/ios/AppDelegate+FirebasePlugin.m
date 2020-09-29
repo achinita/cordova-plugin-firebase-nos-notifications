@@ -1,9 +1,9 @@
 #import "AppDelegate+FirebasePlugin.h"
 #import "FirebasePlugin.h"
-@import FirebaseMessaging;
+//@import FirebaseMessaging;
 // @import Fabric;
 // @import Crashlytics;
-@import FirebaseInstanceID;
+//@import FirebaseInstanceID;
 @import FirebaseAnalytics;
 // @import FirebaseRemoteConfig;
 // @import FirebaseAuth;
