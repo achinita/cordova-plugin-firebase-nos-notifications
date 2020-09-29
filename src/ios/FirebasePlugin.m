@@ -4,7 +4,7 @@
 // @import Fabric;
 // @import Crashlytics;
 //@import FirebaseInstanceID;
-@import FirebaseMessaging;
+//@import FirebaseMessaging;
 @import FirebaseAnalytics;
 // @import FirebaseRemoteConfig;
 // @import FirebasePerformance;
