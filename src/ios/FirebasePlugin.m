@@ -5,6 +5,7 @@
 // @import Crashlytics;
 //@import FirebaseInstanceID;
 //@import FirebaseMessaging;
+@import Firebase;
 @import FirebaseAnalytics;
 // @import FirebaseRemoteConfig;
 // @import FirebasePerformance;
