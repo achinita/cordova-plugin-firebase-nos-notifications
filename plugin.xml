@@ -18,7 +18,7 @@
   <!-- Disabled unzipAndCopyConfigurations for compatibility with Outsystems plugins -->
   <!-- <hook type="before_plugin_install" src="scripts/configurations/unzipAndCopyConfigurations.js" /> -->
   <!-- Added the dependency below, to ensure the plugin will still work as a stand alone without the previous before_plugin_install hook  -->
-  <dependency id="cordova-outsystems-firebase-core" url="https://github.com/OutSystems/cordova-outsystems-firebase-core.git#1.0.0"/>
+  <dependency id="cordova-plugin-firebase-analytics" url="https://github.com/OutSystems/cordova-plugin-firebase-analytics.git#5.0.0-OS1"/>
 
   <preference name="APP_DOMAIN" default="/" />
   <preference name="APP_PATH" default="/" />
